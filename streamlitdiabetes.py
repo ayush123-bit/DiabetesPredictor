@@ -10,7 +10,7 @@ import pickle
 import streamlit as st
 
 # Load the trained model
-model = pickle.load(open("trainedmodel.sav", 'rb'))
+model = pickle.load(open("./trainedmodel.sav", 'rb'))
 
 # Define the prediction function
 def diabetes_prediction(input_data):
