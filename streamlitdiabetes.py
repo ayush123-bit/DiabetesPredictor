@@ -8,6 +8,7 @@ Created on Tue Oct  8 21:37:30 2024
 import pickle
 import streamlit as st
 import os
+import numpy as np
 
 # Create the full path to the model file
 model_path = os.path.join(os.path.dirname(__file__), 'trainedmodel.sav')
@@ -20,7 +21,6 @@ except FileNotFoundError:
     st.write("Model file not found. Please check the file path.")
 except Exception as e:
     st.write(f"An error occurred: {e}")
-
 
 # Define the prediction function
 def diabetes_prediction(input_data):
